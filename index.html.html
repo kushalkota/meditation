@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="MeditationApp.css">
+    <title>Meditation App</title>
+</head>
+
+<body>
+    <div class="app">
+        <video class='video-container' loop>
+            <source src='./Pexels Videos 2491284.mp4' type='video/mp4'>
+        </video>
+
+        <div class="player-container">
+            <audio class='song' loop>
+                <source src='./mixkit-light-rain-looping-1249.wav' />
+            </audio>
+            <button class='play-btn' onclick="play()"><span class="material-icons">play_circle</span></button>
+
+            <h3 class='time-display'></h3>
+
+        </div>
+
+        <div class="time-select">
+            <button onclick="five()">5 mins</button>
+            <button onclick='ten()'>10 mins</button>
+            <button onclick="fifteen()">15 mins</button>
+        </div>
+
+    </div>
+</body>
+<script src="./MeditationApp.js"></script>
+</html>
